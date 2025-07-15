@@ -4,38 +4,47 @@
     box-sizing: border-box;
 }
 body {
+    margin: 0;
     background-color: black;
     color: white;
     font-family:Arial, Helvetica, sans-serif;
 }
 a {
 	color: white;	
-    text-decoration-style: dotted;
-    text-underline-offset: 20%;
+    text-decoration: none;
     padding: 6px;
 }
 a:hover {
     position: relative;
     top: -3px;
 }
+/* foglio */
 .container {
     background-color: #111111;
-    width: 900px;
-    margin: 0 auto;
+    margin: 0%;
+}
+/* header */
+header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0px;
 }
 .header-logo img {
-    position: fixed;
-    height: 30px;
-    margin: 10px auto 10px 0px;
+    display: block;
+    max-width: 150px;
+    height: auto;
 }
 .header-logo:hover {
     position: relative;
     top: 3px;
 }
 .header-menu {
-    margin: 10px 10px 10px 10px;
-    position: right;
-    padding: 10px;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
 }
 .header-menu ul {
     list-style-type: none;
@@ -47,16 +56,17 @@ a:hover {
 }
 .menu a {
     text-decoration: none;
-	color: white;	
+    text-decoration-style: none;
 }
 .botton {
-    background-color: rgb(239, 206, 26);
-    border-radius: 40px 40px 40px 40px;
-    padding: 100px;
+    background-color: rgb(255,230,0);
+    border-radius: 10px;
+    padding: 10px 20px;
     border-top-style: groove;
-    border-top-color: rgb(246, 233, 121);
+    border-top-color: rgb(255, 244, 143);
     border-bottom-style: groove;
-    border-bottom-color: rgb(231, 165, 35);
+    border-bottom-color: rgb(219, 178, 2);
+    border-width: 5px;
     color: black;
 }
 .botton:hover {
@@ -64,10 +74,75 @@ a:hover {
     top: 6px;
     left: 2px;
 }
+/* section-cover */
+.section-cover {
+     position: relative;
+      width: 100%;
+      min-height: 300px;
+    padding: 100px 100px;
+    display: flex;
+      justify-content: center;
+      align-items: center;
+    color: #fff;
+    background-image: url('images/index-cover1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.btn-gioco1 {
+    background-color: transparent;
+    border-color: rgb(255,230,0);
+    color: rgb(255,230,0);
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.btn-gioco1:hover {
+    position: relative;
+    top: 6px;
+    left: 2px;
+}
+.cover-logo {
+    height: 50px;
+}
+.cover-nome-gioco {
+    height: 200px;
+}
+/* footer */
+footer {
+    text-align: center;
+    margin: auto;
+}
+footer div {
+    padding: 100px 0;
+}
+.footer-socials {
+    background-color: rgb(255,230,0);
+    padding: 60px 10px;
+    text-align: center;
+    color: #fff;
+    min-height: 200px;
+    margin: auto;
+}
+.footer-socials img {
+    max-height: 69px;
+}
 .footer-logo img {
     width: 100%;
 }
 .footer-logo:hover {
     position: relative;
     top: 3px;
+}
+.footer-divider {
+  border: 0;
+  border-top: 1px solid #777;
+  padding: 10px 0px;
+}
+.debts a {
+	color: white;	
+    text-decoration: dotted;
+    text-decoration-style: dotted;
+    text-underline-offset: 20%;
+    padding: 6px;
 }
