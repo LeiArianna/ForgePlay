@@ -7,24 +7,29 @@
     <link rel="stylesheet" href="styles/styles.css" />
 </head>
 <body>
-<!-- pagina -->
+    <!-- pagina -->
     <div class="container">
-<!-- header pagina -->
+        <!-- header pagina -->
         <header>
             <div class="header-logo">           
                 <a href="index.html"><img src="images/logo-forgeplay.png" /></a>    
             </div>
-            <div class="header-menu">
-                    <ul>
-                        <a href="index.html"><li>Games</li></a>
-                        <a href="portfolio.html"><li>About Us</li></a>
-                        <a href="#social"><li>Contacts</li></a>
-                        <a href="#social"><li class="botton">JOIN THE TEST</li></a>
-                    </ul>
-            </div>
+            <nav class="header-menu">
+                <ul>
+                    <li><a href="index.html">Games</a></li>
+                    <li><a href="portfolio.html">About Us</a></li>
+                    <li><a href="#social">Contacts</a></li>
+                    <li><a href="#social" class="botton">JOIN THE TEST</a></li>
+                </ul>
+            </nav>
         </header>
         <section class="section-cover">
-
+            <!--<img class="cover-gioco1" src="images/index-cover1.png" />-->
+            <img class="cover-logo" src="images/logo-cover1.png" />
+            <img class="cover-nome-gioco" src="images/nome-gioco-cover1.png" />
+            <button class="btn-gioco1" onclick="window.location.href='gioco1.html'">
+                Scopri Nome Gioco
+            </button>
         </section>
         <section class="section-about">
 
@@ -39,19 +44,25 @@
 
         </section>
         <footer>
+            <div class="footer-socials">
+                <img src="images/footer-socials-icon1.png" />
+                <img src="images/footer-socials-icon2.png" />
+                <img src="images/footer-socials-icon3.png" />
+            </div>
             <div class="header-menu">
                     <ul>
-                        <a href="index.html"><li>Games</li></a>
-                        <a href="portfolio.html"><li>About Us</li></a>
-                        <a href="#social"><li>Contacts</li></a>
-                        <a href="#social"><li>Join The Test</li></a>
+                        <li><a href="index.html">Games</a></li>
+                        <li><a href="portfolio.html">About Us</a></li>
+                        <li><a href="#social">Contacts</a></li>
+                        <li><a href="#social">Join The Test</a></li>
                     </ul>
             </div>
             <div class="footer-logo">           
                 <a href="index.html"><img src="images/logo-forgeplay.png" /></a>    
             </div>
+            <hr class="footer-divider">
             <p>©2025 ForgePlay Studio | Privacy Policy | Cookie settings</p>
-            <p>Made with❤️by <a href="">Laura Paveglio</a> (desigh) & <a href="">Massimiliano Ariani</a> (development)</p>
+            <p class="debts">Made with❤️by<a href="">Laura Paveglio</a>(design) &<a href="">Massimiliano Ariani</a>(development)</p>
         </footer>
     </div>
 </body>
